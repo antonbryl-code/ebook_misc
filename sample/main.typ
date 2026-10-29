@@ -1,15 +1,15 @@
 #let conf(doc, paper: "a4", margin: 2.5cm) = {
-    let width = sys.inputs.at("epubst-width", default: none)
+    let width = sys.inputs.at("ebook-width", default: none)
     if width == none {
       // Normal print layout (typst CLI, other tools)
       set page(paper: paper, margin: margin)
       doc                                                                                                                                          
     } else {
-      // EPUBst viewer: screen-wide, endless page
+      // e-book viewer: screen-wide, endless page
       set page(                                                                                                                                    
         width: eval(width),
         height: auto,
-        margin: eval(sys.inputs.at("epubst-margin")),
+        margin: eval(sys.inputs.at("ebook-margin")),
       )
       doc
     }
