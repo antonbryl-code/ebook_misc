@@ -32,6 +32,18 @@ Here is a formula that needs multiple lines on a small screen:
 $integral (sin x + cos x + 3 x^2 + 4 x^3 + 5 x^4) dif x = -cos x + sin x + x^3 + x^4 + x^5 + C$
 ]
 
+And here's a rather wide table:
+
+#table(
+  columns: 8,
+  align: (left,) + (right,) * 7,
+  stroke: 0.5pt,
+  [*City*],         [*Zürich*], [*Geneva*], [*Basel*],     [*Lausanne*], [*Bern*],  [*Winterthur*], [*Lucerne*],
+  [*Canton*],       [Zürich],   [Geneva],   [Basel-Stadt], [Vaud],       [Bern],    [Zürich],       [Lucerne],
+  [*Population*],   [440,471],  [211,030],  [180,075],     [145,521],    [138,489], [120,715],      [86,687],
+  [*Area (km²)*],   [87.88],    [15.93],    [23.91],       [41.38],      [51.62],   [68.07],        [29.06],
+)
+
 = Gobborn Seer
 
 _From *More English Fairy Tales* by Joseph Jacobs_
