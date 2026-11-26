@@ -1,5 +1,0 @@
-[project]
-entrypoint = "main.typ"
-
-[tool.typzy-reader]
-format = "pageless"
