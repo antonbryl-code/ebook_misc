@@ -1,7 +1,6 @@
 [project]
 entrypoint = "main.typ"
 
-[tool.typzy-reader]
-format = "book"
-cover-img = "images/cover.png"
+[tool.typz-ebook]
+cover-image = "images/cover.png"
 required-fonts = ["EB Garamond", "Source Sans 3"]
