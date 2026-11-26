@@ -1,6 +1,6 @@
 #let conf(doc, paper: "a5", margin: 2.5cm) = {
-    let width = sys.inputs.at("ebook-width", default: none)
-    let height  = sys.inputs.at("ebook-height", default: none)
+    let width = sys.inputs.at("ebook-page-width", default: none)
+    let height  = sys.inputs.at("ebook-page-height", default: none)
     if width == none or height == none {
       set page(paper: paper, margin: margin)
       doc           
@@ -8,7 +8,7 @@
       set page(
         width: eval(width),
         height: eval(height),
-        margin: eval(sys.inputs.at("ebook-margin")),
+        margin: eval(width) * 0.05,
       )
       doc
     }
